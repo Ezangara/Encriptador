@@ -1,0 +1,22 @@
+#logo {
+  position: absolute;
+  left: 4%;
+  top: 5%;
+}
+
+#cuadro-resultado {
+  position: absolute;
+  width: 400px;
+  height: 944px;
+  left: 1000px;
+  top: 40px;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+
+#munieco{
+    
+    padding-top: 40%;
+    
+}
