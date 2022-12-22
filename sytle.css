@@ -1,9 +1,43 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background: #e5e5e5;
+}
+
 #logo {
   position: absolute;
   left: 4%;
   top: 5%;
 }
+#conteiner p {
+  position: absolute;
+  left: 4%;
+  top: 70%;
+  width: 205px;
+  height: 18px;
 
+
+
+  
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+
+  opacity: 0.8;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
 #cuadro-resultado {
   position: absolute;
   width: 400px;
@@ -14,9 +48,66 @@
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
 }
+#input-texto {
+  position: absolute;
+  width: 577px;
+  height: 48px;
+  left: 240px;
+  top: 168px;
 
-#munieco{
-    
-    padding-top: 40%;
-    
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  /* Dark blue/dark-blue-300 */
+
+  color: #0a3871;
+}
+#munieco {
+  padding-top: 40%;
+}
+#respuesta {
+  padding-top: 50%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+
+  text-align: center;
+
+  color: #343a40;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+#mensajes-estado {
+  width: 336px;
+  height: 48px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  padding-top: 15%;
+  margin: auto;
+  text-align: center;
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }

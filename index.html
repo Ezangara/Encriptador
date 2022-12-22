@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="es-la">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador - Challenge - Alura ONE</title>
 
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="sytle.css">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="sytle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="conteiner">
+      <img src="imagenes/vector.png" alt="logo Alura" id="logo" />
+      <textarea
+        name=""
+        id="input-texto"
+        cols="30"
+        rows="10"
+        placeholder="Ingrese su texto aquí"
+      ></textarea>
 
-<div class="conteiner">
-    <img src="imagenes/vector.png" alt="logo Alura" id="logo">
+      <p>&#8505; Solo letras minúsculas y sin acentos</p>
 
-<div id="cuadro-resultado">
-    <img src="imagenes/Munieco.png" alt="" id="munieco  ">
-</div>
-
-
-
-</div>
-<body>
-    
-
-
-
-
-
-</body>
+      <div id="cuadro-resultado">
+        <img src="imagenes/Munieco.png" alt="" id="munieco" />
+        <p id="respuesta">Ningún mensaje fue encontrado</p>
+        <p id="mensajes-estado">
+          Ingrese el texto que desea encriptar o desencriptar
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
