@@ -111,3 +111,48 @@ body {
   align-self: stretch;
   flex-grow: 0;
 }
+
+#btn-encriptar{
+margin-top: 885;
+margin-left: 240;
+display: inline-block;
+padding: 24px;
+gap: 8px;
+width: 328px;
+height: 67px;
+background: #0A3871;
+border-radius: 24px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#btn-desencriptar{
+
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 328px;
+height: 67px;
+
+/* Light gray */
+
+background: #D8DFE8;
+/* Dark blue/dark-blue-300 */
+
+border: 1px solid #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
