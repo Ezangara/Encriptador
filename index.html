@@ -28,7 +28,7 @@
 
       <p id="info">&#8505; Solo letras minúsculas y sin acentos</p>
       <div id="botones">
-        <button id="btn-encriptar">Encriptar</button>
+        <button onclick= id="btn-encriptar">Encriptar</button>
         <button id="btn-desencriptar">Desencriptar</button>
       </div>
       <div id="cuadro-resultado">
@@ -41,3 +41,44 @@
     </div>
   </body>
 </html>
+
+
+
+<script>
+
+let mensajeOriginal=document.getElementById("campo1").value;
+var mensajeEncriptado;
+var mensajeDesencriptado;
+var mensaje;
+
+function encriptar (mensaje){ 
+    mensaje=mensaje.replace(/a/gi,"letra A")
+    mensaje=mensaje.replace("e","letra E")
+    mensaje=mensaje.replace("i","letra I")
+    mensaje=mensaje.replace("o","letra O")
+    mensaje=mensaje.replace("u","letra U") 
+  return mensaje
+};
+
+function desencriptar (mensaje){
+mensaje=mensaje.replace("letra E", "e")
+mensaje=mensaje.replace("letra I", "i")
+mensaje=mensaje.replace("letra O", "o")
+mensaje=mensaje.replace("letra U", "u")
+mensaje=mensaje.replace("letra A", "a")
+return mensaje
+};
+
+
+mensajeEncriptado=encriptar(mensajeOriginal);
+console.log(mensajeEncriptado);
+mensajeDesencriptado=desencriptar(mensajeEncriptado);
+console.log(mensajeDesencriptado);
+
+
+function imprimir (frase){
+  document.write("<big>" + frase + "</big>");
+}
+
+
+</script>
