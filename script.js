@@ -6,72 +6,101 @@ var mensaje;
 var estado = document.querySelector("#mensajes-estado");
 var cuadro = document.getElementById("cuadro-resultado").innerHTML;
 var munieco = document.getElementById("munieco");
-
+let contador = 0
+//***************************************************** */
 function encriptar() {
   var mensajeOriginal = document.getElementById("input-texto").value;
-  console.log(mensaje);
+  
   if (mensajeOriginal == "") {
     mensaje = "Ningún mensaje fue encontrado";
+    munieco.style.display = "flex";
   } else {
+
+    // for (contador; contador < mensajeOriginal.length; contador++) {
+    //   if (mensajeOriginal.charAt(contador) == "a") {
+    //     (mensajeOriginal.charAt(contador) = "ai");
+    //   } else if (mensajeOriginal.charAt(contador) == "e"){
+    //     (mensajeOriginal.charAt(contador) = "enter");
+    //   }else if (mensajeOriginal.charAt(contador) == "i"){
+    //     (mensajeOriginal.charAt(contador) = "imes");
+    //   }else if (mensajeOriginal.charAt(contador) == "o"){
+    //     (mensajeOriginal.charAt(contador) = "ober");
+    //   }else if (mensajeOriginal.charAt(contador) == "u"){
+    //     (mensajeOriginal.charAt(contador) = "ufat");
+    //   };
+    //   mensaje=mensajeOriginal;
+    // };
+    //**********CON REPLACE....NO ENCRIPTA BIEN**** */
     mensaje = document.getElementById("input-texto").value;
-    mensaje = mensaje.replace(/a/gi, "ai");
-    mensaje = mensaje.replace(/e/gi, "enter");
-    mensaje = mensaje.replace(/i/gi, "imes");
-    mensaje = mensaje.replace(/o/gi, "ober");
-    mensaje = mensaje.replace(/u/gi, "ufat");
-    munieco.parentNode.removeChild(munieco);
-    document.getElementById("respuesta").innerText = mensaje;
+    mensaje = mensaje.replace("a", "ai");
+    mensaje = mensaje.replace("e", "enter");
+    mensaje = mensaje.replace("i", "imes");
+    mensaje = mensaje.replace("o", "ober");
+    mensaje = mensaje.replace("u", "ufat");
+    //*************************************** */
+
+
+    munieco.style.display = "none";
     document.getElementById("mensajes-estado").innerText =
       "Mensaje encriptado con éxito";
-
-    var botonCopiar = document.createElement("button");
-    botonCopiar.id = "btn-copiar";
-    botonCopiar.value = "Copiar";
-    
-    botonCopiar.textContent = "Copiar";
-    var currentDiv = document.getElementById("cuadro-resultado");
-    currentDiv.append(botonCopiar);
-    document.getElementById("btn-copiar").onclick=function(){copiar()};
+    document.getElementById("btn-copiar").style.display = "flex";
+    document.getElementById("btn-copiar").onclick = function () {
+      copiar(mensaje);
+    };
   }
-
-  // respuesta.textContent = mensaje;
-  // return mensaje;
+  document.getElementById("respuesta").innerText = mensaje;
 }
 
+//*********************************************************************** */
 function desencriptar(mensaje) {
   var mensajeOriginal = document.getElementById("input-texto").value;
   console.log(mensaje);
   if (mensajeOriginal == "") {
     mensaje = "Ningún mensaje fue encontrado";
+    munieco.style.display = "flex";
   } else {
-    mensaje = mensaje.replace("letra E", "e");
-    mensaje = mensaje.replace("letra I", "i");
-    mensaje = mensaje.replace("letra O", "o");
-    mensaje = mensaje.replace("letra U", "u");
-    mensaje = mensaje.replace("letra A", "a");
-    respuesta.textContent = mensaje;
-
-    return mensaje;
+    mensaje = document.getElementById("input-texto").value;
+    mensaje = mensaje.replace("imes", "i");
+    mensaje = mensaje.replace("ai", "a");
+    mensaje = mensaje.replace("enter", "e");
+    mensaje = mensaje.replace("ober", "o");
+    mensaje = mensaje.replace("ufat", "u");
+    munieco.style.display = "none";
+    document.getElementById("mensajes-estado").innerText =
+      "Mensaje desencriptado con éxito";
+    document.getElementById("btn-copiar").style.display = "flex";
+    document.getElementById("btn-copiar").onclick = function () {
+      copiar(mensaje);
+    };
   }
+  document.getElementById("respuesta").innerText = mensaje;
 }
 
-frase = encriptar(mensajeOriginal);
-console.log(mensajeEncriptado);
-mensajeDesencriptado = desencriptar(mensajeEncriptado);
-console.log(mensajeDesencriptado);
+//************************************************************************* */
+// frase = encriptar(mensajeOriginal);
+// console.log(mensajeEncriptado);
+// mensajeDesencriptado = desencriptar(mensajeEncriptado);
+// console.log(mensajeDesencriptado);
 
-function imprimir(frase) {
-  let mensajeOriginal = document.getElementById("input-texto").value;
-  frase = encriptar(mensajeOriginal);
-  document.write("<big>" + frase + "</big>");
-}
+// function imprimir(frase) {
+//   let mensajeOriginal = document.getElementById("input-texto").value;
+//   frase = encriptar(mensajeOriginal);
+//   document.write("<big>" + frase + "</big>");
+// }
 
-function copiar() {
-  let text = document.getElementById('respuesta').innerHTML;
-  const copyContent = navigator.clipboard.writeText(text);
-      console.log('Content copied to clipboard');
-     
-  console.log(copyContent)
-  var texto=document.getElementById("input-texto").innerText
-  texto.writeText(copyContent);
+function copiar(textoCopiado) {
+  console.log(textoCopiado);
+  textoPegado = document.getElementById("input-texto");
+  textoPegado.value = textoCopiado;
+  munieco.style.display = "flex";
+  document.getElementById("btn-copiar").style.display = "none";
+  // ****************VERSIÓN CON API---FALTA AFINAR EL PEGADO****************//
+  // let text = document.getElementById('respuesta').innerHTML;
+  // const copyContent = navigator.clipboard.writeText(text);
+  //     console.log('Content copied to clipboard');
+
+  // console.log(copyContent)
+  // textoCopiado=navigator.clipboard.readText(copyContent);
+  // console.log(textoCopiado);
+  // document.getElementById("input-texto").value=textoCopiado;
 }

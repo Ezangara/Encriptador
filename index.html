@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador - Challenge - Alura ONE</title>
 
-    <link rel="stylesheet" href="/Encriptador/reset.css" />
-    <link rel="stylesheet" href="/Encriptador/sytle.css" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/sytle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,12 +17,12 @@
   </head>
   <body>
     <div class="conteiner">
-      <img src="/Encriptador/imagenes/Vector.png" alt="logo Alura" id="logo" />
+      <img src="/imagenes/Vector.png" alt="logo Alura" id="logo" />
       <textarea
         name=""
         id="input-texto"
         cols="30"
-        rows="10"
+        rows="20"
         placeholder="Ingrese su texto aquí"
       ></textarea>
 
@@ -32,14 +32,15 @@
         <button onclick="desencriptar()" id="btn-desencriptar">Desencriptar</button>
       </div>
       <div id="cuadro-resultado">
-        <img src="/Encriptador/imagenes/Munieco.png" alt="" id="munieco" />
-        <p id="respuesta">Ningún mensaje fue encontrado</p>
+        <img src="/imagenes/Munieco.png" alt="" id="munieco" />
+        <p id="respuesta"></p>
         <p id="mensajes-estado">
           Ingrese el texto que desea encriptar o desencriptar
         </p>
+        <button id="btn-copiar" value="Copiar">Copiar</button>
       </div>
     </div>
   </body>
 </html>
-<script src="/Encriptador/script.js"></script>
+<script src="/script.js"></script>
 

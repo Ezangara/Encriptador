@@ -4,9 +4,6 @@ body {
   position: relative;
   width: 1440px;
   height: 1024px;
-
-  /* Light blue/light-blue-100 */
-
   background: #f3f5fc;
 }
 
@@ -14,6 +11,8 @@ body {
   position: absolute;
   left: 4%;
   top: 5%;
+  width: 5%;
+  height: auto;
 }
 
 #conteiner {
@@ -23,7 +22,6 @@ body {
   align-items: center;
   padding: 0px;
   gap: 8px;
-
   position: absolute;
   width: 229px;
   height: 18px;
@@ -37,22 +35,13 @@ body {
   width: 205px;
   height: 18px;
   display: flex;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  /* identical to box height, or 18px */
-
-  /* Gray/gray-400 */
-
   color: #495057;
-
   opacity: 0.8;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -70,35 +59,28 @@ body {
 #input-texto {
   position: absolute;
   width: 577px;
-  height: 48px;
+  height: 40%;
   left: 240px;
   top: 168px;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
-  /* identical to box height, or 48px */
-
-  /* Dark blue/dark-blue-300 */
-
   color: #0a3871;
 }
+
 #munieco {
   padding-top: 40%;
 }
+
 #respuesta {
   padding-top: 50%;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2rem;
   line-height: 120%;
-  /* or 29px */
-
   text-align: center;
-
   color: #343a40;
-
   flex: none;
   order: 0;
   align-self: stretch;
@@ -108,7 +90,6 @@ body {
 #mensajes-estado {
   width: 336px;
   height: 48px;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -118,26 +99,19 @@ body {
   padding-top: 15%;
   margin: auto;
   text-align: center;
-
-  /* Gray/gray-400 */
-
   color: #495057;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
- 
 }
+
 #info {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 8px;
-
   position: absolute;
   width: 350px;
   height: 18px;
@@ -146,10 +120,6 @@ body {
 }
 
 #botones {
-  /* Frame 3 */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -158,15 +128,13 @@ body {
   justify-content: center;
   position: absolute;
   width: 680px;
-  height: 67px;
+  height: 10%;
   left: 240px;
-  top: 885px;
+  position: absolute;
+  top: 87%;
 }
+
 #btn-encriptar {
-  /* Button */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -175,98 +143,71 @@ body {
   justify-content: center;
   width: 328px;
   height: 67px;
-
-  /* Dark blue/dark-blue-300 */
-
   background: #0a3871;
   border-radius: 24px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 2.5rem;
   line-height: 19px;
   text-align: center;
   color: #ffffff;
 }
 
 #btn-desencriptar {
-  /* Button */
-
   box-sizing: border-box;
   justify-content: center;
-  /* Auto layout */
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 24px;
   gap: 8px;
-
   width: 328px;
   height: 67px;
-
-  /* Light gray */
-
   background: #d8dfe8;
-  /* Dark blue/dark-blue-300 */
-
   border: 1px solid #0a3871;
   border-radius: 24px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 2.5rem;
   line-height: 19px;
   text-align: center;
-
-  /* Dark blue/dark-blue-300 */
-
   color: #0a3871;
 }
-#btn-copiar {
 
+#btn-copiar {
   box-sizing: border-box;
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: flex-start;
   padding: 24px;
   gap: 8px;
   width: 328px;
   height: 67px;
-justify-content: center;
+  justify-content: center;
   background: #f3f5fc;
   border: 1px solid #0a3871;
   border-radius: 24px;
-
   flex: none;
   order: 1;
   flex-grow: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 2.5rem;
   line-height: 19px;
   text-align: center;
-
   color: #0a3871;
-  position: relative;
+  position: absolute;
   width: 328px;
   height: 67px;
   left: 56px;
-  top: 508px;
-
+  top: 90%;
 }
