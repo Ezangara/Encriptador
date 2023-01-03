@@ -1,38 +1,39 @@
 body {
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
-  position: relative;
-  width: 1440px;
-  height: 1024px;
-  background: #f3f5fc;
-}
-
-#logo {
   position: absolute;
-  left: 4%;
-  top: 5%;
-  width: 5%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  background: #f3f5fc;
 }
 
 #conteiner {
   display: flex;
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding: 0px;
   gap: 8px;
   position: absolute;
-  width: 229px;
-  height: 18px;
-  left: 240px;
-  top: 851px;
+  width: 95%;
+  height: 98%;
+  left: 5%;
+  top: 2%;
+  padding-left: 1%;
+  padding-top: 1%;
 }
+#logo {
+  position: absolute;
+  left: 4%;
+  top: 3%;
+  width: 3%;
+  height: auto;
+}
+
 #conteiner p {
   position: absolute;
   left: 4%;
-  top: 70%;
-  width: 205px;
+  top: 80%;
+  /* width: 16%; */
   height: 18px;
   display: flex;
   font-family: "Inter";
@@ -45,23 +46,24 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+  
 }
 #cuadro-resultado {
   position: absolute;
-  width: 400px;
-  height: 944px;
-  left: 1000px;
-  top: 40px;
+  width: 30%;
+  height: 95%;
+  left: 69%;
+  top: 1%;
   background: #ffffff;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
 }
 #input-texto {
   position: absolute;
-  width: 577px;
+  width: 45%;
   height: 40%;
-  left: 240px;
-  top: 168px;
+  left: 10%;
+  top: 15%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -71,7 +73,11 @@ body {
 }
 
 #munieco {
-  padding-top: 40%;
+
+  position: relative;
+  
+  height: 40%;
+  margin: 10% 20% auto;
 }
 
 #respuesta {
@@ -115,8 +121,8 @@ body {
   position: absolute;
   width: 350px;
   height: 18px;
-  left: 240px;
-  top: 851px;
+  left: 16%;
+  top: 56%;
 }
 
 #botones {
@@ -124,13 +130,13 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  gap: 24px;
+  gap: 1%;
   justify-content: center;
   position: absolute;
-  width: 680px;
+  width: 55%;
   height: 10%;
-  left: 240px;
   position: absolute;
+  left: 5%;
   top: 87%;
 }
 
@@ -138,11 +144,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
+  padding: 1em;
+  /* gap: 8px; */
   justify-content: center;
-  width: 328px;
-  height: 67px;
+  width: 30%;
+  height: 10%;
   background: #0a3871;
   border-radius: 24px;
   flex: none;
@@ -151,8 +157,8 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 19px;
+  font-size: 2em;
+  line-height: 1%;
   text-align: center;
   color: #ffffff;
 }
@@ -163,10 +169,10 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
-  width: 328px;
-  height: 67px;
+  padding: 1em;
+  /* gap: 8px; */
+  width: 30%;
+  height: 10%;
   background: #d8dfe8;
   border: 1px solid #0a3871;
   border-radius: 24px;
@@ -176,21 +182,21 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 19px;
+  font-size: 2em;
+  line-height: 1%;
   text-align: center;
   color: #0a3871;
 }
 
 #btn-copiar {
   box-sizing: border-box;
-  display: none;
+  display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
-  width: 328px;
-  height: 67px;
+  padding: 1em;
+  /* gap: 8px; */
+  width: 60%;
+  height: 8%;
   justify-content: center;
   background: #f3f5fc;
   border: 1px solid #0a3871;
@@ -201,13 +207,11 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 19px;
+  font-size: 2em;
+  line-height: 1%;
   text-align: center;
   color: #0a3871;
   position: absolute;
-  width: 328px;
-  height: 67px;
-  left: 56px;
+  left: 20%;
   top: 90%;
 }
