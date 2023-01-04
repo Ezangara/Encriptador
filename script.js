@@ -13,24 +13,12 @@ function encriptar() {
   
   if (mensajeOriginal == "") {
     mensaje = "Ningún mensaje fue encontrado";
-    munieco.style.display = "flex";
+    if (window.screen.width>1000){
+      munieco.style.display = "flex";
+    }
+    
   } else {
 
-    // for (contador; contador < mensajeOriginal.length; contador++) {
-    //   if (mensajeOriginal.charAt(contador) == "a") {
-    //     (mensajeOriginal.charAt(contador) = "ai");
-    //   } else if (mensajeOriginal.charAt(contador) == "e"){
-    //     (mensajeOriginal.charAt(contador) = "enter");
-    //   }else if (mensajeOriginal.charAt(contador) == "i"){
-    //     (mensajeOriginal.charAt(contador) = "imes");
-    //   }else if (mensajeOriginal.charAt(contador) == "o"){
-    //     (mensajeOriginal.charAt(contador) = "ober");
-    //   }else if (mensajeOriginal.charAt(contador) == "u"){
-    //     (mensajeOriginal.charAt(contador) = "ufat");
-    //   };
-    //   mensaje=mensajeOriginal;
-    // };
-    //**********CON REPLACE....NO ENCRIPTA BIEN**** */
     mensaje = document.getElementById("input-texto").value;
     mensaje = mensaje.replace("a", "ai");
     mensaje = mensaje.replace("e", "enter");
@@ -57,7 +45,9 @@ function desencriptar(mensaje) {
   console.log(mensaje);
   if (mensajeOriginal == "") {
     mensaje = "Ningún mensaje fue encontrado";
-    munieco.style.display = "flex";
+    if (window.screen.width>1000){
+      munieco.style.display = "flex";
+    }
   } else {
     mensaje = document.getElementById("input-texto").value;
     mensaje = mensaje.replace("imes", "i");
@@ -92,7 +82,9 @@ function copiar(textoCopiado) {
   console.log(textoCopiado);
   textoPegado = document.getElementById("input-texto");
   textoPegado.value = textoCopiado;
-  munieco.style.display = "flex";
+  if (window.screen.width>1000){
+    munieco.style.display = "flex";
+  }
   document.getElementById("btn-copiar").style.display = "none";
   // ****************VERSIÓN CON API---FALTA AFINAR EL PEGADO****************//
   // let text = document.getElementById('respuesta').innerHTML;

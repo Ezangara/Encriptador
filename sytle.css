@@ -1,109 +1,183 @@
 body {
-  font-family: "Inter", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #f3f5fc;
+  display: block;
+  background: #E5E5E5;
+  
 }
 
 #conteiner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-  position: absolute;
-  width: 95%;
-  height: 98%;
-  left: 5%;
-  top: 2%;
-  padding-left: 1%;
-  padding-top: 1%;
-}
-#logo {
-  position: absolute;
-  left: 4%;
-  top: 3%;
-  width: 3%;
-  height: auto;
+  
+  justify-items: center;
 }
 
-#conteiner p {
-  position: absolute;
-  left: 4%;
-  top: 80%;
-  /* width: 16%; */
-  height: 18px;
+caja {
   display: flex;
-  font-family: "Inter";
+  margin: auto;
+  
+
+}
+
+#logo {
+  margin: 4%;
+}
+
+#input-texto {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: 35%;
+  padding: 2px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: #0A3871;
+  border: none;
+}
+
+#input-texto::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: #0A3871;
+}
+
+#info {
+  margin: 1% 2%;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
   color: #495057;
-  opacity: 0.8;
   flex: none;
   order: 1;
   flex-grow: 0;
-  
-}
-#cuadro-resultado {
-  position: absolute;
-  width: 30%;
-  height: 95%;
-  left: 69%;
-  top: 1%;
-  background: #ffffff;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  border-radius: 32px;
-}
-#input-texto {
-  position: absolute;
-  width: 45%;
-  height: 40%;
-  left: 10%;
-  top: 15%;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 150%;
-  color: #0a3871;
 }
 
-#munieco {
+#botones {
+  width: 90%;
+  display: block;
+  margin: auto;
+  gap: 1%;
 
-  position: relative;
-  
-  height: 40%;
-  margin: 10% 20% auto;
 }
 
-#respuesta {
-  padding-top: 50%;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 120%;
-  text-align: center;
-  color: #343a40;
+#btn-encriptar {
+  display: flex;
+  margin: 1% auto;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 1%;
+  width: 100%;
+  height: 7%;
+  background: #0A3871;
+  border-radius: 24px;
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  justify-content: center;
+}
+
+#btn-desencriptar {
+  box-sizing: border-box;
+  display: flex;
+  margin: 1% auto;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 1%;
+  width: 100%;
+  height: 7%;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0A3871;
+  justify-content: center;
+}
+
+#btn-copiar {
+  box-sizing: border-box;
+  display: flex;
+  margin: 1% auto;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  gap: 1%;
+  width: 100%;
+  height: 7%;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0A3871;
+  justify-content: center;
+}
+
+
+
+
+
+#munieco {
+  display: none;
+}
+
+#cuadro-resultado {
+  display: flex;
+margin: auto 5%;
+  height: max-content;
+  
+  
+  /* display: flex;
+  margin: 2% auto; */
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  gap: 32px;
+  position: absolute;
+  width: 90%;
+  /* height: 15%; */
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  justify-items: center;
+
 }
 
 #mensajes-estado {
-  width: 336px;
-  height: 48px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  /* or 24px */
-  padding-top: 15%;
-  margin: auto;
   text-align: center;
   color: #495057;
   flex: none;
@@ -112,106 +186,16 @@ body {
   flex-grow: 0;
 }
 
-#info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-  position: absolute;
-  width: 350px;
-  height: 18px;
-  left: 16%;
-  top: 56%;
-}
-
-#botones {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 1%;
-  justify-content: center;
-  position: absolute;
-  width: 55%;
-  height: 10%;
-  position: absolute;
-  left: 5%;
-  top: 87%;
-}
-
-#btn-encriptar {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 1em;
-  /* gap: 8px; */
-  justify-content: center;
-  width: 30%;
-  height: 10%;
-  background: #0a3871;
-  border-radius: 24px;
+#respuesta {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343A40;
   flex: none;
   order: 0;
+  align-self: stretch;
   flex-grow: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2em;
-  line-height: 1%;
-  text-align: center;
-  color: #ffffff;
-}
-
-#btn-desencriptar {
-  box-sizing: border-box;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 1em;
-  /* gap: 8px; */
-  width: 30%;
-  height: 10%;
-  background: #d8dfe8;
-  border: 1px solid #0a3871;
-  border-radius: 24px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2em;
-  line-height: 1%;
-  text-align: center;
-  color: #0a3871;
-}
-
-#btn-copiar {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 1em;
-  /* gap: 8px; */
-  width: 60%;
-  height: 8%;
-  justify-content: center;
-  background: #f3f5fc;
-  border: 1px solid #0a3871;
-  border-radius: 24px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2em;
-  line-height: 1%;
-  text-align: center;
-  color: #0a3871;
-  position: absolute;
-  left: 20%;
-  top: 90%;
 }
