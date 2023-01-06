@@ -1,18 +1,18 @@
 body {
   display: block;
   background: #E5E5E5;
-  
+
 }
 
 #conteiner {
-  
+
   justify-items: center;
 }
 
 caja {
   display: flex;
   margin: auto;
-  
+
 
 }
 
@@ -142,22 +142,14 @@ caja {
   justify-content: center;
 }
 
-
-
-
-
 #munieco {
   display: none;
 }
 
 #cuadro-resultado {
   display: flex;
-margin: auto 5%;
+  margin: auto 5%;
   height: max-content;
-  
-  
-  /* display: flex;
-  margin: 2% auto; */
   flex-direction: column;
   align-items: center;
   padding: 1%;
@@ -198,4 +190,36 @@ margin: auto 5%;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+  /* For tablets: */
+  html {
+    height: 100%;
+  }
+
+  body {
+    min-height: 100vh;
+
+  }
+
+  .conteiner {
+    min-height: 100vh;
+  }
+
+  .caja {
+    min-height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  /* For desktop: */
+  body {
+    background: green;
+  }
+
+  ;
 }
