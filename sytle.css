@@ -1,19 +1,15 @@
 body {
   display: block;
   background: #E5E5E5;
-
 }
 
 #conteiner {
-
   justify-items: center;
 }
 
 #caja {
   display: flex;
   margin: auto;
-
-
 }
 
 #logo {
@@ -62,7 +58,6 @@ body {
   display: block;
   margin: auto;
   gap: 1%;
-
 }
 
 #btn-encriptar {
@@ -161,7 +156,6 @@ body {
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
   justify-items: center;
-
 }
 
 #mensajes-estado {
@@ -217,19 +211,20 @@ body {
     height: 50%;
     margin-top: 10%;
   }
-  #btn-encriptar{
+
+  #btn-encriptar {
     width: 45%;
     height: 5%;
   }
-  #btn-desencriptar{
-    
+
+  #btn-desencriptar {
     width: 45%;
     height: 5%;
   }
-  #input-texto{
+
+  #input-texto {
     height: 70%;
   }
-  
 }
 
 @media only screen and (min-width: 1024px) {
@@ -239,15 +234,12 @@ body {
     min-height: 100vh;
   }
 
-
   body {
     font-family: "Inter", sans-serif;
     font-family: "Montserrat", sans-serif;
     position: absolute;
     width: 100%;
     height: 100%;
-   
-
   }
 
   .conteiner {
@@ -272,16 +264,19 @@ body {
     height: 90%;
 
   }
-  #botones{
+
+  #botones {
     display: flex;
   }
-  #btn-encriptar, #btn-desencriptar, #btn-copiar{
+
+  #btn-encriptar,
+  #btn-desencriptar,
+  #btn-copiar {
     width: 45%;
     height: 5%;
   }
 
   #cuadro-resultado {
-
     position: absolute;
     width: 25%;
     height: 90%;
@@ -296,7 +291,8 @@ body {
   #munieco {
     display: block;
   }
-  #input-texto{
+
+  #input-texto {
     height: 70%;
   }
 

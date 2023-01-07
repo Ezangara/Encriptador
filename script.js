@@ -1,4 +1,3 @@
-
 var mensajeOriginal;
 var mensaje;
 var munieco = document.getElementById("munieco");
@@ -32,7 +31,6 @@ function encriptar() {
 //*********************************************************************** */
 function desencriptar(mensaje) {
   var mensajeOriginal = document.getElementById("input-texto").value;
-  console.log(mensaje);
   if (mensajeOriginal == "") {
     mensaje = "Ningún mensaje fue encontrado";
     if (window.screen.width > 1000) {
