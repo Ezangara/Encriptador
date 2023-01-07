@@ -9,7 +9,7 @@ body {
   justify-items: center;
 }
 
-caja {
+#caja {
   display: flex;
   margin: auto;
 
@@ -124,8 +124,8 @@ caja {
   align-items: center;
   padding: 24px;
   gap: 1%;
-  width: 100%;
-  height: 7%;
+  width: 70%;
+  height: 5%;
   border: 1px solid #0A3871;
   border-radius: 24px;
   flex: none;
@@ -210,16 +210,95 @@ caja {
   }
 
   .caja {
-    min-height: 70vh;
+    min-height: 50vh;
   }
+
+  #botones {
+    display: flex;
+    height: 50%;
+    margin-top: 10%;
+  }
+  #btn-encriptar{
+    width: 45%;
+    height: 5%;
+  }
+  #btn-desencriptar{
+    
+    width: 45%;
+    height: 5%;
+  }
+  #input-texto{
+    height: 70%;
+  }
+  
 }
 
 @media only screen and (min-width: 1024px) {
 
   /* For desktop: */
-  body {
-    background: green;
+  html {
+    min-height: 100vh;
   }
 
-  ;
+
+  body {
+    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+
+  }
+
+  .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 95%;
+    height: 98%;
+    left: 5%;
+    top: autos;
+    padding-left: 1%;
+    padding-top: 1%;
+  }
+
+  .caja {
+    position: absolute;
+    width: 65%;
+    left: 0;
+    height: 90%;
+
+  }
+  #botones{
+    display: flex;
+  }
+  #btn-encriptar, #btn-desencriptar, #btn-copiar{
+    width: 45%;
+    height: 5%;
+  }
+
+  #cuadro-resultado {
+
+    position: absolute;
+    width: 25%;
+    height: 90%;
+    left: 65%;
+    top: 5%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    justify-content: center;
+  }
+
+  #munieco {
+    display: block;
+  }
+  #input-texto{
+    height: 70%;
+  }
+
 }
